@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
+    <!-- Bootstrap -->
+    <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="{{ site.baseurl }}/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="{{ linkhome }}">{{ site.name }}</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="{{ linkhome }}">Home</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Sidebar</li>
+              <li class="active"><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="nav-header">Sidebar</li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="nav-header">Sidebar</li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <div class="hero-unit">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <footer>
+        <p>&copy; Anadea inc 2012</p>
+      </footer>
+
+
+    </div> <!-- /container -->
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+  </body>
+</html>

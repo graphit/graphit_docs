@@ -1,0 +1,11 @@
+.more-spaces {
+  margin: 1em;
+}
+
+.more-spaces.pull-right {
+  margin-right: 0;
+}
+
+.more-spaces.pull-left {
+  margin-left: 0;
+}
